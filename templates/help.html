@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiyo</title>
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <link href="/css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animate.min.css">
+</head>
+<style>
+    *{font-family: 'qihei',sans-serif!important;}
+    .main{text-align: center;padding: 30px 0;}
+    h3{color: #808080}
+    .main .sec{width: 80%;margin: 0 auto;background-color: #f5f5f5;padding: 30px 0;margin-top: 30px;border-radius: 10px;text-align: left}
+    .main .text{padding: 0 30px;}
+    .help{display: inline-block;position: fixed;right: 100px;top: 40px;cursor: pointer;}
+    .help:hover{font-size: 1.2em;color: #1c7430;transition: all 0.3s ease-out}
+    .copyright{position: absolute;bottom: 30px;left: 50%;transform: translateX(-50%);color: #868686}
+    .copyright span{color: #007bff}
+</style>
+<body>
+    <div class="main">
+        <h3>Kiyo 使用帮助</h3><span class="help" onclick="window.location.href='/'">🉑返回主页</span>
+        <div class="sec animated bounceInLeft">
+            <div class="text">
+                <h4>SS配置</h4>
+                <p>SS依赖python3库，使用<code>pip</code>安装<code>shadowsocks</code></p>
+                <pre>pip3 install shadowsocks</pre>
+                <p>使用kiyo命令行工具启动<code>kiyo ss -c local.json</code><br>或者使用webUI启动，点击启动按钮</p>
+                <p>关闭服务按钮，因为平台兼容性，在linux系统未测试完成</p>
+                <h4>SSR配置</h4>
+                <p>kiyo内置了全部SSR基础协议，如果你需要使用chacha等混淆方式需要安装额外插件</p>
+                <p>使用kiyo命令行启动ssr<code>kiyo ssr -c ssr.json</code><br>或者在webUI的ssr配置界面点击启动按钮</p>
+                <p>使用命令行模式启动后请勿关闭命令行终端</p>
+                <p>更多使用帮助参考<a href="http://mgek.cc/kiyo.md">kiyo文档</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright <span>KIYO</span></div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "qihei";
+    font-display: fallback;
+    font-style: normal;
+    src: url("/css/SourceHanSansSC-Medium.ttf") format('truetype');
+}
